@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <h1 id="title"><b>Registration Form</b><p class="description"><i>If you want to start your coding journey with a dedicated team of tutors,
+      fill in the form below</i>
+    </p></h1>
+    <form action="" id="registration-form">
+      <div class="name-div">
+        <label id="name-label">Name</label>
+        <input
+          type="name"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="email-div">
+        <label id="email-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <p class="language">Which language(s) would you like help with?</p>
+      <label for="languages">Select the language(s)</label>
+      <select name="languages" id="languages">
+        <option value="1">HTML</option>
+        <option value="2">Java</option>
+        <option value="3">JavaScript</option>
+        <option value="4">Python</option>
+        <option value="5">C++</option>
+        <option value="6">C#</option>
+      </select>
+
+      <p>How often would you like to have tutoring sessions?</p>
+        <select id="session" name="session">
+          <option value="1">3 times per week</option>
+          <option value="2">2 times per week</option>
+          <option value="3">once per week</option>
+          <option value="4">once every two weeks</option>
+          <option value="5">once per month</option>
+        </select>
+      </div>
+      <div class="form-div">
+        <label id="label-radio">How advanced are you?</label>
+      </div>
+      <div class="form-radio">
+        <label id="beginner"
+          ><input
+            type="radio"
+            value="beginner"
+            name="expertise"
+          />Beginner</label
+        >
+      </div>
+      <div class="form-radio">
+        <label id="intermediate"
+          ><input
+            type="radio"
+            value="intermediate"
+            name="expertise"
+          />Intermediate</label
+        >
+      </div>
+      <div class="form-div">
+        <input id="submit" type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
